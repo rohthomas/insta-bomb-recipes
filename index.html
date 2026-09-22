@@ -15,6 +15,9 @@ h1{font-size:1.4rem;margin:0}
 .tabs{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap;padding:.5rem 1rem}
 .tab{border:0;background:none;color:var(--muted);font-size:.95rem;padding:.6rem .9rem;cursor:pointer;border-bottom:2px solid transparent}
 .tab.active{color:var(--acc);border-bottom-color:var(--acc);font-weight:600}
+.subtabs{display:flex;gap:.5rem;overflow-x:auto;white-space:nowrap;padding:.2rem 0 1rem}
+.subtab{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:.4rem 1rem;cursor:pointer;font-size:.88rem}
+.subtab.active{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
 main{max-width:1100px;margin:0 auto;padding:1rem}
 .panel{display:none}.panel.active{display:block}
 #search{width:100%;padding:.7rem 1rem;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-size:1rem;margin-bottom:1rem}
@@ -38,7 +41,7 @@ footer{max-width:1100px;margin:0 auto;padding:1.5rem 1rem;color:var(--muted);fon
 <div><h1>Recipes &amp; Ideas from the Wife's Insta Bomb</h1><p class="sub">Recipes and finds collected from Instagram reels — updated automatically.</p></div>
 <button id="theme" aria-label="Toggle dark mode">🌙</button>
 </header>
-<nav class="tabs"><button class="tab active" data-tab="Recipes">Recipes</button><button class="tab" data-tab="Amazon Finds">Amazon Finds</button><button class="tab" data-tab="Products">Products</button><button class="tab" data-tab="Costco — Markham East">Costco — Markham East</button><button class="tab" data-tab="Trader Joe&#x27;s Finds">Trader Joe&#x27;s Finds</button><button class="tab" data-tab="Target Finds">Target Finds</button><button class="tab" data-tab="Other Finds">Other Finds</button></nav>
+<nav class="tabs"><button class="tab active" data-tab="Recipes">Recipes</button><button class="tab" data-tab="Restaurants">Restaurants</button><button class="tab" data-tab="Amazon Finds">Amazon Finds</button><button class="tab" data-tab="Products">Products</button><button class="tab" data-tab="Costco — Markham East">Costco — Markham East</button><button class="tab" data-tab="Trader Joe&#x27;s Finds">Trader Joe&#x27;s Finds</button><button class="tab" data-tab="Target Finds">Target Finds</button><button class="tab" data-tab="Other Finds">Other Finds</button></nav>
 <main><section class="panel active" id="panel-0"><input id="search" type="search" placeholder="Search recipes or ingredients…"><div class="grid">
     <article class="card recipe" data-search="butter chicken bunny chow 4 chicken fillets, cubed 4 thigh fillets, cubed 6 tbsp plain yoghurt 3 tsp ginger garlic ½ lemon, juiced 1½ tsp crushed cumin 1½ tsp crushed coriander seeds ½ tsp turmeric 1 tsp chilli powder 1½ tsp salt ½ tsp black pepper 1 tbsp ghee 1 medium onion, finely chopped 1½ tsp ginger garlic 1 tsp coriander powder 1 tsp garam masala ½ tsp turmeric 1 tsp chilli powder 50 g tomato paste 40 g butter cream, to finish 4 cups cake flour 7 g instant yeast 2½ tsp sugar 1¼ tsp salt ⅓ cup oil ¾ cup lukewarm milk ¾ cup lukewarm water add the chicken to a bowl with the yoghurt, ginger garlic, lemon juice, cumin, crushed coriander seeds, turmeric, chilli powder, salt and pepper. mix well, cover and marinate for a few hours. heat a heavy pot over medium-high heat and add the marinated chicken. cook until nicely browned and almost cooked through. remove and set aside. in the same pan, add the ghee and onion; cook until softened and lightly golden. add the ginger garlic, coriander powder, garam masala, turmeric and chilli powder; cook briefly until fragrant. add the tomato paste and butter; cook down a few minutes until the tomato paste darkens slightly and the butter begins to separate. return the chicken to the pan and mix well so it&#x27;s coated in sauce. simmer until the chicken is cooked through and the sauce thickens. finish with a generous splash of cream, stir through, taste and adjust seasoning. top with coriander and serve.">
       <img src="orig-bunny-chow.jpg" alt="Butter Chicken Bunny Chow" loading="lazy">
@@ -549,7 +552,7 @@ footer{max-width:1100px;margin:0 auto;padding:1.5rem 1rem;color:var(--muted);fon
           <div class="links"><a href="https://www.instagram.com/reel/C6gsvGPrFvt/" target="_blank" rel="noopener">View reel</a></div>
         </div>
       </div>
-    </article></div></section><section class="panel" id="panel-1"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-2"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-3"><div class="grid">
+    </article></div></section><section class="panel" id="panel-1"><p class='empty'>No restaurants yet — new spots will appear automatically.</p></section><section class="panel" id="panel-2"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-3"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-4"><div class="grid">
     <article class="card find">
       <img src="costco-dyson-hushjet.jpg" alt="Dyson HushJet HJ10 Purifier" loading="lazy">
       <div class="card-body">
@@ -603,7 +606,7 @@ footer{max-width:1100px;margin:0 auto;padding:1.5rem 1rem;color:var(--muted);fon
         <p class="desc">Costco Canada deal: Kirkland Signature 100% pure liquid honey. September 2026.</p>
         
       </div>
-    </article></div></section><section class="panel" id="panel-4"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-5"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-6"><div class="grid">
+    </article></div></section><section class="panel" id="panel-5"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-6"><p class='empty'>Nothing here yet — new finds will appear automatically.</p></section><section class="panel" id="panel-7"><div class="grid">
     <article class="card find">
       <img src="find-flight-essentials.jpg" alt="Flight essentials haul" loading="lazy">
       <div class="card-body">
@@ -666,6 +669,7 @@ document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.th
 document.querySelectorAll('.tab').forEach((b,i)=>{b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById('panel-'+i).classList.add('active');};});
 const s=document.getElementById('search');
 if(s)s.addEventListener('input',()=>{const q=s.value.toLowerCase();document.querySelectorAll('#panel-0 .card').forEach(c=>{c.style.display=c.dataset.search.includes(q)?'':'none';});});
+document.querySelectorAll('.subtab').forEach(b=>{b.onclick=()=>{document.querySelectorAll('.subtab').forEach(x=>x.classList.remove('active'));b.classList.add('active');const city=b.dataset.city;document.querySelectorAll('#resto-grid .card').forEach(c=>{c.style.display=(city==='All'||c.dataset.city===city)?'':'none';});};});
 </script>
 </body>
 </html>
