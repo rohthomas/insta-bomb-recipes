@@ -34,12 +34,22 @@ h1{margin:0;font-size:1.5rem}h2{margin:2rem 0 .2rem;font-size:1.25rem}
 footer{max-width:1100px;margin:0 auto;padding:1.5rem 1rem;color:var(--muted);font-size:.8rem;text-align:center}
 #theme{border:1px solid var(--line);background:none;border-radius:999px;padding:.5rem .8rem;cursor:pointer;font-size:1rem}
 section{max-width:1100px;margin:0 auto;padding:0 1rem}
+.tabs{max-width:1100px;margin:0 auto;padding:0 1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:.55rem 1.1rem;cursor:pointer;font-weight:600;font-size:.95rem}
+.tab.active{background:var(--acc);border-color:var(--acc);color:#fff}
+.panel{display:none;max-width:1100px;margin:0 auto;padding:0 1rem}
+.panel.active{display:block}
 </style></head><body>
 <header><div><h1>Costco Markham East — Deals &amp; Finds</h1>
 <p class="sub">Daily posts from @costcomarkhameast. Expired deals are struck through.</p></div>
 <button id="theme" aria-label="Toggle dark mode">🌙</button></header>
 <a class="back" href="index.html">← Back to Recipes &amp; Finds</a>
-<section id="deals"><h2>🔥 Deals</h2><p class="sub">Sale &amp; clearance reports. Weekly sales are assumed valid through Sunday unless the post says otherwise.</p><div class="grid"><article class="card">
+<nav class="tabs">
+<button class="tab active" data-p="deals">🔥 Deals</button>
+<button class="tab" data-p="clearance">🏷️ Clearance</button>
+<button class="tab" data-p="finds">✨ New Finds</button>
+</nav>
+<div class="panel active" id="panel-deals"><p class="sub">Sale reports. Weekly sales are assumed valid through Sunday unless the post says otherwise.</p><div class="grid"><article class="card">
 <div class="meta">Oct 8 <span class="badge">Ends Oct 11</span></div>
 <h3>Sales Photo Report October 8, 2026.</h3>
 <p class='blurb'>55 items spotted</p>
@@ -54,13 +64,6 @@ section{max-width:1100px;margin:0 auto;padding:0 1rem}
 <a class="btn" href="https://www.instagram.com/p/DeO4mydAFum/" target="_blank" rel="noopener">View post on Instagram</a>
 </article>
 <article class="card">
-<div class="meta">Oct 7 </div>
-<h3>Clearance Photo Report October 7, 2026.</h3>
-<p class='blurb'>Costco 🇨🇦 Clearance Photo Report October 7, 2026. New Markdowns at Costco today! All items spotted at Costco Richmond Hill but should be available at most locations while supplies last. Check your warehouse!</p>
-<img class='cover' src='costco-18011136212987679.jpg' alt='' loading='lazy'>
-<a class="btn" href="https://www.instagram.com/p/DeNeqWTANdx/" target="_blank" rel="noopener">View post on Instagram</a>
-</article>
-<article class="card">
 <div class="meta">Oct 7 <span class="badge">Ends Oct 11</span></div>
 <h3>Sales Photo Report October 7, 2026.</h3>
 <p class='blurb'>Costco 🇨🇦 Sales Photo Report October 7, 2026. New deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
@@ -73,6 +76,41 @@ section{max-width:1100px;margin:0 auto;padding:0 1rem}
 <p class='blurb'>New Costco 🇨🇦 Food Sales Photo Report Oct 6, 2026. New grocery deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
 <img class='cover' src='costco-18156015301520270.jpg' alt='' loading='lazy'>
 <a class="btn" href="https://www.instagram.com/p/DeJ_dxBkfKC/" target="_blank" rel="noopener">View post on Instagram</a>
+</article>
+<article class="card expired">
+<div class="meta">Oct 2 <span class="badge out">Ended Oct 4</span></div>
+<h3><s>Happy Friday!</s></h3>
+<p class='blurb'>Happy Friday! New Costco 🇨🇦 Sales Photo Report October 2, 2026! New deals at Costco this week! Some sales are weekend only ending Sunday! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
+<img class='cover' src='costco-17962488495212762.jpg' alt='' loading='lazy'>
+<a class="btn" href="https://www.instagram.com/p/Dd_bycEgEuG/" target="_blank" rel="noopener">View post on Instagram</a>
+</article>
+<article class="card expired">
+<div class="meta">Oct 1 <span class="badge out">Ended Oct 4</span></div>
+<h3><s>Sales Photo Report October 1, 2026.</s></h3>
+<p class='blurb'>Costco 🇨🇦 Sales Photo Report October 1, 2026. New deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
+<img class='cover' src='costco-17969221116149938.jpg' alt='' loading='lazy'>
+<a class="btn" href="https://www.instagram.com/p/Dd86c2HgE4_/" target="_blank" rel="noopener">View post on Instagram</a>
+</article>
+<article class="card expired">
+<div class="meta">Sep 30 <span class="badge out">Ended Oct 4</span></div>
+<h3><s>Sales Photo Report September 30, 2026.</s></h3>
+<p class='blurb'>Costco 🇨🇦 Sales Photo Report September 30, 2026. New deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
+<img class='cover' src='costco-18019317716952188.jpg' alt='' loading='lazy'>
+<a class="btn" href="https://www.instagram.com/p/Dd6Vo_VgMJW/" target="_blank" rel="noopener">View post on Instagram</a>
+</article>
+<article class="card expired">
+<div class="meta">Sep 29 <span class="badge out">Ended Oct 4</span></div>
+<h3><s>Food Sales Photo Report September 29, 2026.</s></h3>
+<p class='blurb'>Costco 🇨🇦 Food Sales Photo Report September 29, 2026. 35+ New Deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
+<img class='cover' src='costco-18115620191471911.jpg' alt='' loading='lazy'>
+<a class="btn" href="https://www.instagram.com/p/Dd4VtCjiVO7/" target="_blank" rel="noopener">View post on Instagram</a>
+</article></div></div>
+<div class="panel" id="panel-clearance"><p class="sub">Clearance &amp; markdown sightings — while supplies last.</p><div class="grid"><article class="card">
+<div class="meta">Oct 7 </div>
+<h3>Clearance Photo Report October 7, 2026.</h3>
+<p class='blurb'>Costco 🇨🇦 Clearance Photo Report October 7, 2026. New Markdowns at Costco today! All items spotted at Costco Richmond Hill but should be available at most locations while supplies last. Check your warehouse!</p>
+<img class='cover' src='costco-18011136212987679.jpg' alt='' loading='lazy'>
+<a class="btn" href="https://www.instagram.com/p/DeNeqWTANdx/" target="_blank" rel="noopener">View post on Instagram</a>
 </article>
 <article class="card">
 <div class="meta">Oct 5 </div>
@@ -108,44 +146,17 @@ section{max-width:1100px;margin:0 auto;padding:0 1rem}
 <p class='blurb'>Costco 🇨🇦 Clearance Photo Report September 30, 2026. New Markdowns at Costco today! All items spotted at Costco Richmond Hill but should be available at most locations while supplies last. Check your warehouse. So many g</p>
 <img class='cover' src='costco-17960883291209014.jpg' alt='' loading='lazy'>
 <a class="btn" href="https://www.instagram.com/p/Dd7K_V_CWos/" target="_blank" rel="noopener">View post on Instagram</a>
-</article>
-<article class="card expired">
-<div class="meta">Oct 2 <span class="badge out">Ended Oct 4</span></div>
-<h3><s>Happy Friday!</s></h3>
-<p class='blurb'>Happy Friday! New Costco 🇨🇦 Sales Photo Report October 2, 2026! New deals at Costco this week! Some sales are weekend only ending Sunday! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
-<img class='cover' src='costco-17962488495212762.jpg' alt='' loading='lazy'>
-<a class="btn" href="https://www.instagram.com/p/Dd_bycEgEuG/" target="_blank" rel="noopener">View post on Instagram</a>
-</article>
-<article class="card expired">
-<div class="meta">Oct 1 <span class="badge out">Ended Oct 4</span></div>
-<h3><s>Sales Photo Report October 1, 2026.</s></h3>
-<p class='blurb'>Costco 🇨🇦 Sales Photo Report October 1, 2026. New deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
-<img class='cover' src='costco-17969221116149938.jpg' alt='' loading='lazy'>
-<a class="btn" href="https://www.instagram.com/p/Dd86c2HgE4_/" target="_blank" rel="noopener">View post on Instagram</a>
-</article>
-<article class="card expired">
-<div class="meta">Sep 30 <span class="badge out">Ended Oct 4</span></div>
-<h3><s>Sales Photo Report September 30, 2026.</s></h3>
-<p class='blurb'>Costco 🇨🇦 Sales Photo Report September 30, 2026. New deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
-<img class='cover' src='costco-18019317716952188.jpg' alt='' loading='lazy'>
-<a class="btn" href="https://www.instagram.com/p/Dd6Vo_VgMJW/" target="_blank" rel="noopener">View post on Instagram</a>
-</article>
-<article class="card expired">
-<div class="meta">Sep 29 <span class="badge out">Ended Oct 4</span></div>
-<h3><s>Food Sales Photo Report September 29, 2026.</s></h3>
-<p class='blurb'>Costco 🇨🇦 Food Sales Photo Report September 29, 2026. 35+ New Deals at Costco this week! Items spotted all over the GTA while supplies last. Check your warehouse!</p>
-<img class='cover' src='costco-18115620191471911.jpg' alt='' loading='lazy'>
-<a class="btn" href="https://www.instagram.com/p/Dd4VtCjiVO7/" target="_blank" rel="noopener">View post on Instagram</a>
-</article></div></section>
-<section id="finds"><h2>✨ New Finds</h2><p class="sub">New products spotted at the warehouse.</p><div class="grid"><article class="card">
+</article></div></div>
+<div class="panel" id="panel-finds"><p class="sub">New products spotted at the warehouse.</p><div class="grid"><article class="card">
 <div class="meta">Oct 4 </div>
 <h3>20 New Costco 🇨🇦 Finds This Week October 4, 2026.</h3>
 <p class='blurb'>20 New Costco 🇨🇦 Finds This Week October 4, 2026. Items spotted all over the GTA while supplies last. Which one will you be trying?</p>
 <img class='cover' src='costco-18499940977103826.jpg' alt='' loading='lazy'>
 <a class="btn" href="https://www.instagram.com/p/DeF-tlaCUyu/" target="_blank" rel="noopener">View post on Instagram</a>
-</article></div></section>
+</article></div></div>
 <footer>Auto-updated daily from @costcomarkhameast (not affiliated with Costco). Deal dates come from the post captions.</footer>
 <script>
 const root=document.documentElement;const saved=localStorage.getItem('theme');if(saved)root.dataset.theme=saved;
 document.getElementById('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'':'dark';localStorage.setItem('theme',root.dataset.theme||'');};
+document.querySelectorAll('.tab').forEach(b=>{b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById('panel-'+b.dataset.p).classList.add('active');};});
 </script></body></html>
