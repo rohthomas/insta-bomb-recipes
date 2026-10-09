@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Costco Bill Tracker</title><style>
+:root{--bg:#fff;--fg:#1c1c1e;--muted:#6b7280;--line:#e5e7eb;--card:#f9fafb;--pill:#e8f5e9;--pillfg:#1b7a2e;--warn:#fdecea;--warnfg:#b3261e}
+@media(prefers-color-scheme:dark){:root{--bg:#111;--fg:#f2f2f2;--muted:#9aa0a6;--line:#2a2a2a;--card:#1a1a1a;--pill:#12351f;--pillfg:#7ee2a0;--warn:#3d1512;--warnfg:#ff9d94}}
+body{font-family:-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:1rem;max-width:900px;margin-inline:auto}
+a{color:#0a66c2}
+.bill{border:1px solid var(--line);border-radius:12px;padding:1rem;margin-bottom:1.25rem;background:var(--card)}
+.bill h2{margin:.1rem 0 .4rem;font-size:1.15rem}
+.meta{color:var(--muted);font-size:.88rem;margin-bottom:.6rem}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th{text-align:left;color:var(--muted);font-weight:600;padding:.35rem .4rem;border-bottom:1px solid var(--line)}
+td{padding:.4rem;border-bottom:1px solid var(--line);vertical-align:top}
+.itemno{font-family:ui-monospace,monospace;font-size:.78rem;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:.05rem .35rem;white-space:nowrap}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;border-radius:999px;padding:.12rem .6rem;background:var(--pill);color:var(--pillfg)}
+.pill.drop{background:var(--warn);color:var(--warnfg)}
+.dropbox{margin-top:.6rem;border:1px solid var(--warnfg);border-radius:8px;padding:.6rem .8rem;background:var(--warn);font-size:.9rem}
+.note{color:var(--muted);font-size:.85rem;margin-top:1rem}
+</style></head><body>
+<h1>🧾 Costco Bill Tracker</h1>
+<p class="meta">Upload a Costco receipt and I'll watch every item for 30 days — if anything drops in price, it gets flagged here. Costco honors price adjustments within 30 days of purchase (bring the receipt to customer service).</p>
+<p><a href="costco-deals.html">← Costco Markham East daily deals</a> · <a href="https://rohthomas.github.io/insta-bomb-recipes/">all recipes & finds</a></p>
+<div class="bill"><h2>2026-10-08 — Costco Markham (#151)</h2>
+<div class="meta">Total $166.90 · watching until 2026-11-07 · <b>active</b></div>
+<table><tr><th>Item</th><th>Qty</th><th>You paid</th><th>Best seen</th><th>Status</th></tr><tr><td><span class='itemno'>2071606</span><br>Godiva Masterpiece Assortment 421g</td><td>2</td><td>$12.99</td><td>$12.99 <span class='meta'>(seen )</span></td><td><span class="pill">Watching</span></td></tr><tr><td><span class='itemno'>500666</span><br>Kirkland Signature Water 500ml</td><td>2</td><td>$4.79</td><td>—</td><td><span class="pill">Watching</span></td></tr><tr><td><span class='itemno'>352545</span><br>Jalapeno Aioli</td><td>2</td><td>$9.99</td><td>—</td><td><span class="pill">Watching</span></td></tr><tr><td><span class='itemno'>2059194</span><br>Cookie Post</td><td>2</td><td>$11.99</td><td>—</td><td><span class="pill">Watching</span></td></tr><tr><td><span class='itemno'>1615718</span><br>Kirkland Signature S&#x27;mores</td><td>2</td><td>$14.99</td><td>—</td><td><span class="pill">Watching</span></td></tr><tr><td><span class='itemno'>1331706</span><br>Nestle Turtles 800g</td><td>2</td><td>$19.99</td><td>$19.99 <span class='meta'>(seen )</span></td><td><span class="pill">Watching</span></td></tr><tr><td><span class='itemno'>1186219</span><br>Butter 454g</td><td>1</td><td>$4.95</td><td>—</td><td><span class="pill">Watching</span></td></tr></table></div>
+<p class="note">Prices are checked daily against the Costco Markham East deals feed. Only item numbers are matched, so comparisons are apples-to-apples. Receipt photos are never published.</p></body></html>
